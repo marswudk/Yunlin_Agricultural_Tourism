@@ -1,0 +1,180 @@
+$Gukeng :#5cb237;
+$Douliu:#83af4e;
+$YuanChang:#f39b77;
+$ShuiLin:#cb2622;
+$Mailiao:#c6d6ed;
+$SiHu:#3886c6;
+$Huwei:#f7f1bd;
+$KouHu:#0173bc;
+$ErLun:#9dd8f6;
+$LunBei:#d3edfa;
+$Citong:#77c6b3;
+$Xiluo:#53c3f3;
+$LinNei:#6fbb73;
+$DouNan:#f1ef74;
+$TaiXi:#8aacda;
+$TuKu:#fee7c5;
+$DongShi:#e1cee4;
+$DaPi:#e9a81e;
+$BeiGang:#eb613a;
+$BaoZhong:#c49bc5;
+$title:#3a3ac2;
+body{
+    overflow: hidden;
+}
+
+.map_box{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 220px)
+}
+
+#map {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) ;
+
+    g {
+        transform: translate(10px, 10px);
+        text{
+            font-size: 25px;
+            fill:black;
+            font-family: '微軟正黑體';
+            font-weight: 700;
+        }
+        cursor: pointer;
+    }
+}
+
+#Gukeng {
+    path {
+        fill: $Gukeng;
+    }
+}
+
+#Douliu {
+    path {
+        fill: $Douliu;
+    }
+}
+
+#YuanChang {
+    path {
+        fill: $YuanChang;
+    }
+}
+
+#ShuiLin {
+    path {
+        fill: $ShuiLin;
+    }
+}
+
+#Mailiao {
+    path {
+        fill: $Mailiao;
+    }
+}
+
+#SiHu {
+    path {
+        fill: $SiHu;
+    }
+}
+
+#Huwei {
+    path {
+        fill: $Huwei;
+    }
+}
+
+#KouHu {
+    path {
+        fill: $KouHu;
+    }
+}
+
+#ErLun {
+    path {
+        fill: $ErLun;
+    }
+}
+
+#LunBei {
+    path {
+        fill: $LunBei;
+    }
+}
+
+#Citong {
+    path {
+        fill: $Citong;
+    }
+}
+
+#Xiluo {
+    path {
+        fill: $Xiluo;
+    }
+}
+
+#LinNei {
+    path {
+        fill: $LinNei;
+    }
+}
+
+#DouNan {
+    path {
+        fill: $DouNan;
+    }
+}
+
+#TaiXi {
+    path {
+        fill: $TaiXi;
+    }
+}
+
+#TuKu {
+    path {
+        fill: $TuKu;
+    }
+}
+
+#DongShi {
+    path {
+        fill: $DongShi;
+    }
+}
+
+#DaPi {
+    path {
+        fill: $DaPi;
+    }
+}
+
+#BeiGang {
+    path {
+        fill: $BeiGang;
+    }
+}
+
+#BaoZhong {
+    path {
+        fill: $BaoZhong;
+    }
+}
+
+g {
+    transition: .3s;
+
+    &:hover {
+        transform: translate(5px, 5px) !important;
+    }
+}
+text.title{
+    font-size: 50px;
+    fill: $title;
+}

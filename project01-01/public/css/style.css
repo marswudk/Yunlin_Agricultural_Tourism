@@ -1,0 +1,127 @@
+@charset "UTF-8";
+body {
+  overflow: hidden;
+}
+
+.map_box {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 220px);
+}
+
+#map {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#map g {
+  -webkit-transform: translate(10px, 10px);
+          transform: translate(10px, 10px);
+  cursor: pointer;
+}
+
+#map g text {
+  font-size: 25px;
+  fill: black;
+  font-family: '微軟正黑體';
+  font-weight: 700;
+}
+
+#Gukeng path {
+  fill: #5cb237;
+}
+
+#Douliu path {
+  fill: #83af4e;
+}
+
+#YuanChang path {
+  fill: #f39b77;
+}
+
+#ShuiLin path {
+  fill: #cb2622;
+}
+
+#Mailiao path {
+  fill: #c6d6ed;
+}
+
+#SiHu path {
+  fill: #3886c6;
+}
+
+#Huwei path {
+  fill: #f7f1bd;
+}
+
+#KouHu path {
+  fill: #0173bc;
+}
+
+#ErLun path {
+  fill: #9dd8f6;
+}
+
+#LunBei path {
+  fill: #d3edfa;
+}
+
+#Citong path {
+  fill: #77c6b3;
+}
+
+#Xiluo path {
+  fill: #53c3f3;
+}
+
+#LinNei path {
+  fill: #6fbb73;
+}
+
+#DouNan path {
+  fill: #f1ef74;
+}
+
+#TaiXi path {
+  fill: #8aacda;
+}
+
+#TuKu path {
+  fill: #fee7c5;
+}
+
+#DongShi path {
+  fill: #e1cee4;
+}
+
+#DaPi path {
+  fill: #e9a81e;
+}
+
+#BeiGang path {
+  fill: #eb613a;
+}
+
+#BaoZhong path {
+  fill: #c49bc5;
+}
+
+g {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+g:hover {
+  -webkit-transform: translate(5px, 5px) !important;
+          transform: translate(5px, 5px) !important;
+}
+
+text.title {
+  font-size: 50px;
+  fill: #3a3ac2;
+}
+/*# sourceMappingURL=style.css.map */

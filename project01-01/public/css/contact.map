@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,IAAI,CAAA;EACA,MAAM,EAAE,CAAC;CACZ",
+    "sources": [
+        "branches.scss"
+    ],
+    "names": [],
+    "file": "branches.css"
+}

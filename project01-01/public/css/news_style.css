@@ -1,0 +1,40 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: '微軟正黑體';
+}
+
+.info_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row {
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+
+.table tr th:nth-child(1) {
+  width: 400px;
+}
+
+.table tr th img {
+  max-width: 300px;
+  height: auto;
+}
+
+.map {
+  width: 100%;
+}
+
+.map iframe {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+}
+/*# sourceMappingURL=news_style.css.map */

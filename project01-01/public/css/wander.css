@@ -1,0 +1,576 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1e8e8;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+.navbar .navbar-brand {
+  font-size: 40px;
+  color: orangered;
+}
+
+.navbar a {
+  padding: 0;
+}
+
+.navbar .navbar-collapse {
+  -webkit-box-flex: unset;
+      -ms-flex-positive: unset;
+          flex-grow: unset;
+}
+
+.navbar .logo img {
+  width: 60px;
+}
+
+.banner {
+  width: 100%;
+  height: 400px;
+  background-image: url("../img/pic_A12-00353_5.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.banner h1 {
+  color: black;
+  font-size: 60px;
+  font-weight: 900;
+  text-shadow: #ffc182 4px 6px 6px;
+  z-index: 4;
+}
+
+.banner .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.searching_menu {
+  background-color: inherit;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.searching_menu .banner_menu {
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 0 3px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 0 3px 0 rgba(0, 0, 0, 0.08);
+  width: 70%;
+  min-height: 100px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: -40px;
+}
+
+.searching_menu .banner_menu ul {
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0;
+  padding-left: 0;
+}
+
+.searching_menu .banner_menu ul li {
+  list-style: none;
+}
+
+.searching_menu .banner_menu ul li:hover a {
+  color: #000;
+  -webkit-box-shadow: inset 1px 2px 10px 3px #FFFFFF, 1px 3px 11px 3px #ADADAD;
+          box-shadow: inset 1px 2px 10px 3px #FFFFFF, 1px 3px 11px 3px #ADADAD;
+}
+
+.searching_menu .banner_menu ul li a {
+  border-radius: 20px;
+  border: 1px solid gray;
+}
+
+.searching_menu.fixed {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.second_nav {
+  text-align: center;
+  background-color: #e6e6e6;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.second_nav ul {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+}
+
+.second_nav ul li {
+  padding: 10px;
+}
+
+.second_nav ul li:hover {
+  background-color: black;
+}
+
+.second_nav ul li:hover a {
+  color: white;
+}
+
+.second_nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.second_nav.fixed {
+  visibility: visible;
+  opacity: 1;
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  z-index: 99;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.all {
+  width: 100%;
+  margin: 0;
+  /* 現在位置 */
+  /* 雲林魅力指南 */
+  /* 超人氣雲林活動 */
+  /* 預訂雲林熱門特色活動 */
+  /* 預訂雲林熱門特色活動卡片 */
+  /* 行前規劃&準備 */
+}
+
+.all .map_list {
+  width: 100%;
+  height: 50px;
+  background-color: inherit;
+}
+
+.all .map_list nav .breadcrumb {
+  margin-bottom: 0;
+  background-color: unset;
+}
+
+.all .introduction_title {
+  width: 100%;
+  height: 50px;
+  background-color: inherit;
+  font-size: 2em;
+}
+
+.all .introduction_box {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  margin-bottom: 30px;
+  /* 天氣卡片 */
+}
+
+.all .introduction_box .travel_introduction {
+  height: 150px;
+  background-color: inherit;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+  position: relative;
+}
+
+.all .introduction_box .travel_introduction p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  padding: 5px 10px;
+}
+
+.all .introduction_box .travel_introduction a {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  bottom: -17px;
+  left: calc(50% - 10px);
+  margin: 0;
+  padding: 5px;
+}
+
+.all .introduction_box .weather_card {
+  background-color: white;
+  padding: 0px;
+  border: 1px solid rgba(211, 211, 211, 0.445);
+}
+
+.all .introduction_box .weather_card .today {
+  width: 100%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.all .introduction_box .weather_card .today .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all .introduction_box .weather_card .today .detail img {
+  width: 60px;
+}
+
+.all .introduction_box .weather_card button {
+  width: 100%;
+  background-color: inherit;
+}
+
+.all .introduction_box .weather_card .future {
+  width: 100%;
+}
+
+.all .introduction_box .weather_card .future .drop-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  padding: 5px;
+  margin: 5px;
+}
+
+.all .introduction_box .weather_card .future .drop-item img {
+  width: 20px;
+}
+
+.all .introduction_box .weather_card .future .col {
+  margin: 0;
+}
+
+.all .activity_title {
+  font-size: 2em;
+  background-color: inherir;
+  margin-bottom: 15px;
+  padding-top: 30px;
+}
+
+.all .act_cards {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.all .act_cards a {
+  text-decoration: none;
+  color: #000;
+}
+
+.all .booking_title {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.all .booking_travel {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.all .booking_travel .photo_group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all .booking_travel .photo_group .photo_view {
+  width: calc(100% / 3);
+  height: 200px;
+}
+
+.all .booking_travel .photo_group #photo_v1 .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.all .booking_travel .photo_group #photo_v1 .content img {
+  width: 100%;
+  height: 100%;
+}
+
+.all .booking_travel .photo_group #photo_v1 .content .view_text {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  color: #fff;
+  text-shadow: black 4px 3px 5px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(71%, black));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 71%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+}
+
+.all .booking_travel .photo_group #photo_v1 .content .view_text h2 {
+  font-size: 24px;
+}
+
+.all .booking_travel .photo_group #photo_v1 .content .view_text a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: black 4px 3px 5px;
+}
+
+.all .booking_travel .photo_group #photo_v1:hover {
+  width: 50%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.all .booking_travel .photo_group #photo_v2 .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.all .booking_travel .photo_group #photo_v2 .content img {
+  width: 100%;
+  height: 100%;
+}
+
+.all .booking_travel .photo_group #photo_v2 .content .view_text {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  color: #fff;
+  text-shadow: black 4px 3px 5px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(71%, black));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 71%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+}
+
+.all .booking_travel .photo_group #photo_v2 .content .view_text h2 {
+  font-size: 24px;
+}
+
+.all .booking_travel .photo_group #photo_v2 .content .view_text a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: black 4px 3px 5px;
+}
+
+.all .booking_travel .photo_group #photo_v2:hover {
+  width: 50%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.all .booking_travel .photo_group #photo_v3 .content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.all .booking_travel .photo_group #photo_v3 .content img {
+  width: 100%;
+  height: 100%;
+}
+
+.all .booking_travel .photo_group #photo_v3 .content .view_text {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  color: #fff;
+  text-shadow: black 4px 3px 5px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(71%, black));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 71%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#000000', GradientType=0);
+}
+
+.all .booking_travel .photo_group #photo_v3 .content .view_text h2 {
+  font-size: 24px;
+}
+
+.all .booking_travel .photo_group #photo_v3 .content .view_text a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: black 4px 3px 5px;
+}
+
+.all .booking_travel .photo_group #photo_v3:hover {
+  width: 50%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.all .photocard_group {
+  width: 100%;
+  padding: 0;
+  margin: 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.all .photocard_group .card {
+  padding: 0;
+}
+
+.all .photocard_group .card a {
+  text-decoration: none;
+  color: #000;
+}
+
+.all .discover_title {
+  font-size: 2em;
+}
+
+.all .discover_box {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.all .discover_box .discover {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.all .discover_box .discover a .card {
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 0 3px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 0 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.all .discover_box .discover a .card .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.all .discover_box .discover:nth-child(1) a .card {
+  background-color: rgba(253, 161, 161, 0.5);
+}
+
+.all .discover_box .discover:nth-child(2) a .card {
+  background-color: rgba(142, 255, 89, 0.5);
+}
+
+.all .discover_box .discover:nth-child(3) a .card {
+  background-color: rgba(121, 164, 255, 0.5);
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e6e6e6;
+  padding: 15px;
+}
+
+.footer .logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.footer .logo img {
+  width: 40px;
+}
+
+.footer .content {
+  margin-right: 15px;
+}
+
+.footer .content p {
+  font-size: 16px;
+}
+
+.footer .social_media a img {
+  width: 30px;
+}
+/*# sourceMappingURL=wander.css.map */

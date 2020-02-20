@@ -1,0 +1,83 @@
+$submit:#ff5722;
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-color: #c0e2e6;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+}
+
+.form_width {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 1000;
+}
+
+
+.choice {
+    .choice_inner {
+        width: 100%;
+        border-bottom: 0.5px #e0e0e0 solid;
+    }
+
+    .option {
+        // width: 50%;
+        width: 100%;
+        text-align: center;
+        color: #666666;
+    }
+
+    .active {
+        color: $submit;
+        border-bottom: 2px $submit solid;
+    }
+}
+
+.login_form,.register_form {
+    background-color: white;
+    position: absolute;
+    width: 440px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .form-check-input {
+        margin-top: .2rem;
+    }
+
+    .register,.log_in {
+        color: black;
+        height: 22px;
+        line-height: 22px;
+        padding: 0 12px;
+        border: 1px solid #999;
+        display: block;
+        border-radius: 2px;
+        white-space: nowrap;
+
+        &:hover {
+            border-color: #666;
+        }
+    }
+}
+
+.log_in_btn {
+    background-color: $submit;
+    border: none;
+}

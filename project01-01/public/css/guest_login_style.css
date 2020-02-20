@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  background-color: #c0e2e6;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+}
+
+.form_width {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 1000;
+}
+
+.choice .choice_inner {
+  width: 100%;
+  border-bottom: 0.5px #e0e0e0 solid;
+}
+
+.choice .option {
+  width: 50%;
+  text-align: center;
+  color: #666666;
+}
+
+.choice .active {
+  color: #ff5722;
+  border-bottom: 2px #ff5722 solid;
+}
+
+.login_form, .register_form {
+  background-color: white;
+  position: absolute;
+  width: 440px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.login_form .form-check-input, .register_form .form-check-input {
+  margin-top: .2rem;
+}
+
+.login_form .register, .login_form .log_in, .register_form .register, .register_form .log_in {
+  color: black;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 12px;
+  border: 1px solid #999;
+  display: block;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.login_form .register:hover, .login_form .log_in:hover, .register_form .register:hover, .register_form .log_in:hover {
+  border-color: #666;
+}
+
+.log_in_btn {
+  background-color: #ff5722;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */
