@@ -21,7 +21,7 @@
 　　透過這個專題實作，結合課堂所學之前端、後端的技術，來嘗試做出一個雲林觀光網站，介紹一些實際現有的農業體驗活動，並虛擬做出一個雲林觀光護照─Yunlin Pass，專題就此產生。 
   
 ### Mockup
-![](https://i.imgur.com/8WbUojf.png)
+![](./image/mockup.png))
 
 
 ---
@@ -33,40 +33,40 @@
 +	Bootstrap
 +	SVG互動式可點擊地圖  
 
-![](https://i.imgur.com/u9Ur9xo.png)
+![](./image/index.png)
 
 
 ---
 後端所使用到的技能
  
 功能：  
-![](https://i.imgur.com/FPvsRXK.png)
+![](./image/back-1.png)
 1.	鄉鎮管理  
 
     能從後台管理鄉鎮的名稱、郵遞區號、代表圖片  
-![](https://i.imgur.com/zlrYSR0.png)
+![](./image/back-2.png)
 2.	附近景點管理  
 
     能從後台管理，所關聯之鄉鎮的周遭景點、代表圖、詳細介紹連結  
-![](https://i.imgur.com/Tv0NzJk.png)
+![](./image/back-3.png)
 3.	最新消息管理  
 
     能從後台管理，最新消息、標題、內文、地圖..等詳細欄位、詳細介紹頁面連結。   
 
-![](https://i.imgur.com/bOzv6Ic.png)
+![](./image/back-5.png)
 4.	雲林Pass銷售管理  
 
     能從後台管理所販售之產品，標題、內文、價格等欄位。  
-![](https://i.imgur.com/ZcnYihO.png)
+![](./image/back-6.png)
 
 5.	訂單管理  
 
     能從後台管理所成立之訂單，其狀態、成交價格、使用者資訊、篩選訂單狀態、刪除等功能 
-![](https://i.imgur.com/hS2SW5T.png)
+![](./image/back-7.png)
 
 6.	聯絡我們_答覆專區  
 
     能於後台看見訪客所留之問題，之後能轉交負責客服之單位。  
-![](https://i.imgur.com/ar37YkZ.png)
+![](./image/back-8.png)
 
 網站呈現可[點此前往](http://nchu108-10.dev-hub.io/)
